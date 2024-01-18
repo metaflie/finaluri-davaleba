@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Country Cards</title>
+  </head>
+
+  <body class="day-mode">
+    <div class="heading">
+      <div><b>Where in the world?</b></div>
+      <button class="dark_mode">
+        <div>
+          <span style="font-size: 20px" class="material-symbols-outlined">
+            dark_mode
+          </span>
+        </div>
+        <p style="font-size: 10px">Dark Mode</p>
+      </button>
+    </div>
+    <div class="controls">
+      <div class="search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input class="search-input" type="search" placeholder="search for a country...">
+
+      </div>
+      <select id="sort-by">
+        <option value="none">All Regions</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </div>
+
+    <div class="card-container">
+      <!-- Country cards will be dynamically inserted here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
